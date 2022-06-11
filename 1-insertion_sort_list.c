@@ -4,7 +4,7 @@
 * compare - nodes
 * @n1: higher node
 * @n2: lower node
-* Reeturn: True or False
+* Return: True or False
 */
 int compare(listint_t *n1, listint_t *n2)
 {
