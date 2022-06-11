@@ -16,12 +16,12 @@ int compare(listint_t *n1, listint_t *n2)
 }
 
 /**
-* swap - two nodes in a doubly linked list
+* sswap - two nodes in a doubly linked list
 * @i: position of first node
 * @j: position of second node
 *
 */
-void swap(listint_t *i, listint_t *j)
+void sswap(listint_t *i, listint_t *j)
 {
 	if (i->prev)
 		i->prev->next = j;
@@ -35,7 +35,6 @@ void swap(listint_t *i, listint_t *j)
 
 /**
 * insertion_sort_list - sor a doubly linked list of integers
-* ins ascending order
 *
 * @list: list of integers
 */
@@ -54,7 +53,7 @@ void insertion_sort_list(listint_t **list)
 		{
 			if (comp->prev->n > comp->n)
 			{
-				swap(comp->prev, comp);
+				sswap(comp->prev, comp);
 				if (!comp->prev)
 					*list = comp;
 				print_list((const listint_t *)*list);
