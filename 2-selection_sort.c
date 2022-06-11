@@ -2,7 +2,6 @@
 
 /**
 * selection_sort - sort algorithm selection
-*
 * @array: array to sort
 * @size: size of the array
 */
