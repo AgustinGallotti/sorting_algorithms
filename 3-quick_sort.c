@@ -14,7 +14,6 @@ void swap(int *array, size_t size, int *a, int *b)
 		*a = *a + *b;
 		*b = *a - *b;
 		*a = *a - *b;
-		print_array((const int *)array, size);
 	}
 }
 
@@ -64,7 +63,7 @@ void quicksort(int *array, size_t size, ssize_t low, ssize_t hig)
 */
 void quick_sort(int *array, size_t size)
 {
-	if (!array || size < 2)
+	if (!array || !size)
 		return;
 	quicksort(array, size, 0, size - 1);
 }
